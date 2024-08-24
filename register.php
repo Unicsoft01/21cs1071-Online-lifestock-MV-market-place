@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="" style="height: auto;">
  <?php require_once('inc/header.php') ?>
-<body class="hold-transition">
+<body class="hold-transition hp_bg">
   <script>
     start_loader()
   </script>
@@ -39,7 +39,7 @@
   </script>
   <div class="d-flex justify-content-center align-items-center flex-row h-100">
         <div class="col-5">
-            <center><img src="<?= validate_image($_settings->info('logo')) ?>" alt="System Logo" class="img-thumbnail rounded-circle" id="logo-img"></center>
+            
             <h1 class="text-center" id="system_name"><?= $_settings->info('name') ?></h1>
         </div>
         <div class="col-7 h-100 bg-gradient-light px-4">

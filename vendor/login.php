@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="" style="height: auto;">
  <?php require_once('inc/header.php') ?>
-<body class="hold-transition login-page">
+<body class="hold-transition login-page hp_bg">
   <script>
     start_loader()
   </script>
@@ -30,13 +30,13 @@
         alert_toast("<?php echo $_settings->flashdata('success') ?>",'success')
       </script>
     <?php endif;?>
-  <center><img src="<?= validate_image($_settings->info('logo')) ?>" alt="System Logo" class="img-thumbnail rounded-circle" id="logo-img"></center>
+ 
 <h1 class="text-center" id="system_name"><?= $_settings->info('name') ?></h1>
   <div class="clear-fix my-2"></div>
 <div class="login-box">
 
   <!-- /.login-logo -->
-  <div class="card card-outline card-primary">
+  <div class="card card-outline card-success op_w_03">
     <div class="card-header text-center">
       <a href="./login.php" class="h1"><b>Vendor Login</b></a>
     </div>
@@ -66,7 +66,7 @@
           </div>
           <!-- /.col -->
           <div class="col-4">
-            <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
+            <button type="submit" class="btn btn-success btn-block btn-flat">Sign In</button>
           </div>
           <div class="col-12 text-center">
           <a href="<?= base_url.'vendor/register.php' ?>">Create an Account</a>
